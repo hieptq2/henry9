@@ -1,0 +1,11 @@
+// ==============================================
+// Base
+// ==============================================
+
+body{
+	overflow-x: hidden;
+	background-color: $color--background;
+	&.body--bg-light{
+		background-color: material-color('grey','50');
+	}
+}

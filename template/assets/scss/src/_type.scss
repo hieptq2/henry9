@@ -1,0 +1,27 @@
+// ==============================================
+// Type
+// ==============================================
+
+body{
+	font-family: $font-family--serif;
+	font-size: $font-size;
+	line-height: $font-height;
+}
+p{
+	margin-bottom: 16px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+a{
+	&,
+	&:hover,
+	&:focus,
+	&:active,
+	&:visited{
+		color: $color--main;
+	}
+}
+b{
+	font-weight: 700;
+}
