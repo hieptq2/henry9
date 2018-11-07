@@ -25,3 +25,7 @@ a{
 b{
 	font-weight: 700;
 }
+.text-small{
+	font-size: $font-size--sm;
+	line-height: $font-height--sm;
+}
