@@ -3659,14 +3659,14 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
   .hidden-print { display: none !important; } }
 /** Retrieves a color value from the $material-colors Sass map Inspired by https://github.com/nilskaspersson/Google-Material-UI-Color-Palette/  @function @param {string} color-name             - quoted, lower-case, dasherized color name (e.g. 'pink', 'amber') @param {string} [color-variant='500']  - quoted, lowercase color variant (e.g. '200', 'a100') */
 /* line 2, ../scss/_placeholders.scss */
-.menu a, .logo a, .section a, .about-me__article a, .about-me__action, .contact-me__info .info__social a, .bio__menu a, .site-footer__people .people__link, .menu a:active, .logo a:active, .section a:active, .about-me__article a:active, .about-me__action:active, .contact-me__info .info__social a:active, .bio__menu a:active, .site-footer__people .people__link:active, .menu a:focus, .logo a:focus, .section a:focus, .about-me__article a:focus, .about-me__action:focus, .contact-me__info .info__social a:focus, .bio__menu a:focus, .site-footer__people .people__link:focus, .menu a:visited, .logo a:visited, .section a:visited, .about-me__article a:visited, .about-me__action:visited, .contact-me__info .info__social a:visited, .bio__menu a:visited, .site-footer__people .people__link:visited, .menu a:hover, .logo a:hover, .section a:hover, .about-me__article a:hover, .about-me__action:hover, .contact-me__info .info__social a:hover, .bio__menu a:hover, .site-footer__people .people__link:hover { text-decoration: none; }
+.menu a, .logo a, .section__heading__subtitle a, .about-me__article a, .about-me__action, .contact-me__info .info__social a, .bio__menu a, .site-footer__people .people__link, .menu a:active, .logo a:active, .section__heading__subtitle a:active, .about-me__article a:active, .about-me__action:active, .contact-me__info .info__social a:active, .bio__menu a:active, .site-footer__people .people__link:active, .menu a:focus, .logo a:focus, .section__heading__subtitle a:focus, .about-me__article a:focus, .about-me__action:focus, .contact-me__info .info__social a:focus, .bio__menu a:focus, .site-footer__people .people__link:focus, .menu a:visited, .logo a:visited, .section__heading__subtitle a:visited, .about-me__article a:visited, .about-me__action:visited, .contact-me__info .info__social a:visited, .bio__menu a:visited, .site-footer__people .people__link:visited, .menu a:hover, .logo a:hover, .section__heading__subtitle a:hover, .about-me__article a:hover, .about-me__action:hover, .contact-me__info .info__social a:hover, .bio__menu a:hover, .site-footer__people .people__link:hover { text-decoration: none; }
 
 /* line 11, ../scss/_placeholders.scss */
-.section a, .about-me__article a, .contact-me__info .info__social a, .bio__menu a, .site-footer__people .people__link { position: relative; }
+.section__heading__subtitle a, .about-me__article a, .contact-me__info .info__social a, .bio__menu a, .site-footer__people .people__link { position: relative; }
 /* line 13, ../scss/_placeholders.scss */
-.section a:after, .about-me__article a:after, .contact-me__info .info__social a:after, .bio__menu a:after, .site-footer__people .people__link:after { content: ""; display: block; position: absolute; bottom: -1px; left: 0; width: 0; height: 1px; background-color: #4caf50; -webkit-transition: width 0.2s ease-in-out; -o-transition: width 0.2s ease-in-out; transition: width 0.2s ease-in-out; }
+.section__heading__subtitle a:after, .about-me__article a:after, .contact-me__info .info__social a:after, .bio__menu a:after, .site-footer__people .people__link:after { content: ""; display: block; position: absolute; bottom: -1px; left: 0; width: 0; height: 1px; background-color: #4caf50; -webkit-transition: width 0.2s ease-in-out; -o-transition: width 0.2s ease-in-out; transition: width 0.2s ease-in-out; }
 /* line 25, ../scss/_placeholders.scss */
-.section a:hover:after, .about-me__article a:hover:after, .contact-me__info .info__social a:hover:after, .bio__menu a:hover:after, .site-footer__people .people__link:hover:after { width: 100%; }
+.section__heading__subtitle a:hover:after, .about-me__article a:hover:after, .contact-me__info .info__social a:hover:after, .bio__menu a:hover:after, .site-footer__people .people__link:hover:after { width: 100%; }
 
 /* line 1, ../scss/_helpers.scss */
 .bg-cover { -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; background-position: 50% 50%; }
@@ -4089,13 +4089,13 @@ b { font-weight: 700; }
   100% { background-color: #9c27b0; } }
 /* line 5, ../scss/src/modules/_section.scss */
 .section { margin: 192px 0; }
-/* line 11, ../scss/src/modules/_section.scss */
+/* line 7, ../scss/src/modules/_section.scss */
 .section__header { margin: 0 0 48px; }
-/* line 15, ../scss/src/modules/_section.scss */
+/* line 11, ../scss/src/modules/_section.scss */
 .section__heading { position: relative; text-align: center; }
-/* line 18, ../scss/src/modules/_section.scss */
+/* line 14, ../scss/src/modules/_section.scss */
 .section__heading__title { position: relative; z-index: 500; margin: 0; font-family: "Oswald", sans-serif; font-weight: 400; text-transform: uppercase; color: #212121; }
-/* line 27, ../scss/src/modules/_section.scss */
+/* line 23, ../scss/src/modules/_section.scss */
 .section__heading__subtitle { position: relative; z-index: 500; margin: 12px 0 0; font-size: 12px; line-height: 20px; text-transform: uppercase; letter-spacing: 1.5px; color: #616161; }
 /* line 37, ../scss/src/modules/_section.scss */
 .section__heading:after { content: ''; position: absolute; top: 50%; left: 50%; margin-top: -4px; -moz-transform: translateX(-50%) rotate(30deg); -ms-transform: translateX(-50%) rotate(30deg); -webkit-transform: translateX(-50%) rotate(30deg); transform: translateX(-50%) rotate(30deg); z-index: 0; height: 1px; width: 320px; background-color: #eee; }

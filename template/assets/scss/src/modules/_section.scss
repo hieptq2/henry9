@@ -4,10 +4,6 @@
 
 .section{
 	margin: 192px 0;
-	a{
-		@extend %link-no-udl;
-		@extend %link-hover-bdb;
-	}
 	&__header{
 		// display: flex;
 		margin: 0 0 48px;
@@ -33,6 +29,10 @@
 			text-transform: uppercase;
 			letter-spacing: 1.5px;
 			color: material-color('grey','700');
+			a{
+				@extend %link-no-udl;
+				@extend %link-hover-bdb;
+			}
 		}
 		&:after{
 			content: '';
