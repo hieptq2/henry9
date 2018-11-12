@@ -12,7 +12,7 @@
 		position: fixed;
 		top: 0; left: 0; right: 0;
 		& + .site-content{
-			margin-top: $height--header;
+			padding-top: $height--header;
 		}
 	}
 	&__wrapper{
@@ -38,9 +38,9 @@
 			display: inline-block;
 			vertical-align: top;
 			margin: 10px 0 0;
-			padding: 0 16px 0 18px;
+			padding: 0 8px 0 10px;
 			line-height: 28px;
-			font-size: 14px;
+			font-size: 10px;
 			color: material-color('grey','300');
 		}
 		&:last-child{
@@ -60,18 +60,17 @@
 		padding: 0 0 1px;
 		line-height: 46px;
 		font-family: $font-family--san-serif;
-		font-size: 24px;
+		font-size: 16px;
 		font-weight: 300;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		color: $color--body;
 		@include transition(color .1s ease-in-out);
-
 	}
 	&__subtitle{
 		display: block;
 		position: absolute;
-		top: 100%; left: -1px;
+		top: 100%; left: 0;
 		z-index: 800;
 		margin: 0;
 		max-height: 0;
@@ -89,27 +88,45 @@
 			top: 1px;
 		}
 	}
-
-	// hover
-	&__link{
-		&:hover{
-			.menu__title{
-				color: $color--main;
+	@media (min-width: $screen-xs-min){
+		&__single{
+			&:after{
+				padding: 0 16px 0 18px;
+				font-size: 14px;
 			}
-			.menu__subtitle{
-				max-height: 24px;
+		}
+		&__link{
+			//
+		}
+		&__title{
+			font-size: 24px;
+		}
+		// hover
+		&__link{
+			&:hover{
+				.menu__title{
+					color: $color--main;
+				}
+				.menu__subtitle{
+					max-height: 24px;
+				}
 			}
 		}
 	}
+		
 }
 .logo{
+	@media (max-width: $screen-xs-max){
+		margin-right: -5px;
+	}
 	a{
 		@extend %link-no-udl;
 	}
 	&__link{
 		display: block;
-		width: 36px;
-		height: 36px;
+		margin: 0 0 1px;
+		width: 32px;
+		height: 32px;
 		text-align: center;
 		background-color: $color--main;
 		color: #fff;
@@ -117,17 +134,25 @@
 			@include animation(logoColors 2s infinite ease-in-out);
 			@include transform-origin(50% 50%);
 		}
+		@media (min-width: $screen-xs-min){
+			width: 36px;
+			height: 36px;
+		}
 	}
 	&__title{
 		margin: 0;
 		padding: 0;
 		display: inline-block;
-		line-height: 36px;
+		line-height: 32px;
 		// font-family: $font-family--san-serif;
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: 400;
 		letter-spacing: 1px;
 		color: #fff;
+		@media (min-width: $screen-xs-min){
+			line-height: 36px;
+			font-size: 16px;
+		}
 	}
 }
 
